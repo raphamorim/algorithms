@@ -5,14 +5,9 @@
 */
 
 function flattenArray(element, accArr = []) {
-  if (!Array.isArray(element)) {
-    accArr.push(element);
-    return accArr;
-  }
-
-  element.forEach(i => {
-    flattenArray(i, accArr)
-  })
+  !Array.isArray(element) ?
+    accArr.push(element) :
+    element.forEach(i => flattenArray(i, accArr))
 
   return accArr;
 }
