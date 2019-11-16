@@ -4,3 +4,17 @@
   array [1, [2, [3]]] should return [1, 2, 3].
 */
 
+function flattenArray(element, accArr = []) {
+  if (!Array.isArray(element)) {
+    accArr.push(element);
+    return accArr;
+  }
+
+  element.forEach(i => {
+    flattenArray(i, accArr)
+  })
+
+  return accArr;
+}
+
+flattenArray([1, [2, [3]], [5]])
