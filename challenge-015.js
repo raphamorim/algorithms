@@ -32,23 +32,35 @@ Explanation: The root node's value is 5 but its right child's value is 4.
 
 */
 
-// -> 2 { 1, 3 }
-
 var isValidBST = function(root) {
-  function isValidBSTNode(node) {
-    if (node === null) {
-      return true;
-    }
-
-    if (node.value > node.right && node.value < node.left) {
-      return false;
-    }
-
-    const left = isValidBSTNode(node.left); // should return true
-    const right = isValidBSTNode(node.right); // should return true
-    return left && right;
+  if (root == null) {
+    return null
   }
 
-  return isValidBSTNode(root);
+  return check(root, null, null)
 };
+
+var check = function(root, lower, upper) {
+  // If you get to the bottom of a list successfully, without finding any irregularities
+  if (root == null) {
+    return true
+  }
+
+  // If there is a lower value, comparing it with the node it came from, to confirm its less than.
+  if (lower != null) {
+    if (root.val >= lower) {
+      return false
+    }
+  }
+
+  // If there is an upper value, compare it with the node it came from, to confirm its greater than
+  if (upper != null) {
+    if (root.val <= upper) {
+      return false
+    }
+  }
+
+  // If all nodes reach the bottom without any irregulaties in the binary tree conditions, return true
+  return (check(root.left, root.val, upper) && check(root.right, lower, root.val))
+}
 

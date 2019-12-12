@@ -30,3 +30,21 @@
     [1, [2, [[3]], [4, 5, 6]], [[[[[[7, 8, 9]]]]]]]
     => [1, 2, 3, 4, 5, 6, 7, 8, 9]
 */
+
+var array = [1, [2, [[3]], [4, 5, 6]], [[[[[[7, 8, 9]]]]]]];
+
+function flatArray(input) {
+  const flattenedArr = [];
+  function flat(list) {
+    list.forEach(item => {
+      if (Array.isArray(item)) {
+        flat(item)
+      } else {
+        flattenedArr.push(item);
+      }
+    })
+  }
+
+  flat(input);
+  return flattenedArr;
+}
