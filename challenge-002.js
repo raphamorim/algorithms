@@ -77,5 +77,16 @@ function getNodeFromPath(node, path) {
   return node;
 }
 
+// Without mutation
+// function getNodeByPath(root, path) {
+//   const p = path.slice();
+//   let node = root;
+//   while (p.length > 0) {
+//     node = children[p[p.pop()]];
+//   }
+
+//   return node;
+// }
+
 const nodePath = getPath(rootA, nodeA);
 console.log(getNodeFromPath(rootB, nodePath) === nodeB); // true

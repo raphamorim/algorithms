@@ -18,20 +18,19 @@ Then 4 is the first bad version.
 
 */
 
-function solution(isBadVersion) {
-  return function(n) {
-    let left = 0;
-    let right = n;
+function firstBadVersion(badVersion) {
+  let start = 0;
+  let end = n;
 
-    while (right - left !== 1) {
-      const mid = parseInt((left + right) / 2);
+  while (start + 1 < end) {
+    const mid = parseInt(((end - start) / 2) + start);
 
-      if (isBadVersion(mid)) {
-        right = mid;
-      } else {
-        left = mid;
-      }
+    if (checkBadVersion(mid)) {
+      end = mid;
+    } else {
+      start = mid;
     }
-    return right;
-  };
+  }
+
+  return checkBadVersion(start) ? start : end;
 }
