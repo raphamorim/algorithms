@@ -1,7 +1,32 @@
-# Algorithm Playground
+# Algorithms 101
 
-### [Challenge 1](./challenge-001.js)
+🌊
 
-### [Challenge 2](./challenge-002.js)
+## JavaScript
 
-### [Challenge 3](./challenge-003.js)
+### Running JavaScript exercises
+
+```bash
+make run lang=js n=001
+```
+
+### Running specific test for JavaScript (wip)
+
+```bash
+make test lang=js n=001
+```
+
+### Running all tests for JavaScript (wip)
+
+```bash
+make test lang=js
+```
+
+## Rust
+
+### Running Rust exercises
+
+```bash
+make run lang=rust n=001
+```
+

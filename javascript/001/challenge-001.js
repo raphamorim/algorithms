@@ -55,5 +55,3 @@ function excludeItems(items, excludesDict) {
 }
 
 console.log(excludeItems(items, excludes));
-
-

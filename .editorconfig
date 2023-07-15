@@ -10,9 +10,25 @@ insert_final_newline = true
 max_line_length = 80
 trim_trailing_whitespace = true
 
+[*.js]
+charset = utf-8
+end_of_line = lf
+indent_size = 2
+indent_style = space
+insert_final_newline = true
+max_line_length = 80
+trim_trailing_whitespace = true
+
 [*.md]
-max_line_length = 0
+# double whitespace at end of line
+# denotes a line break in Markdown
 trim_trailing_whitespace = false
+
+[*.yml]
+indent_size = 2
+
+[{Makefile,**.mk}]
+# Use tabs for indentation (Makefiles require tabs)
 indent_style = tab
 
 [COMMIT_EDITMSG]
