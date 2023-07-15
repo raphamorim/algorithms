@@ -2,6 +2,8 @@
 
 🌊
 
+Problems per languages: [JavaScript](#javascript) • [Rust](#rust)
+
 ## JavaScript
 
 Problems:
