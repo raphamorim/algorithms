@@ -6,60 +6,50 @@ Problems per languages: [JavaScript](#javascript) • [Rust](#rust) • [Golang]
 
 --
 
+## Big O
+
+We can analyze how efficient an algorithm is from the amount of time, storage, other resources it takes to run the algorithm, and a change in the input size. Big O Notation in Data Structure tells us how well an algorithm will perform in a particular situation. In other words, it gives an algorithm's upper-bound runtime or worst-case complexity.
+
+The performance of an algorithm can change with a change in the input size. That is where Asymptotic Notations like Big O Notation comes into play. Asymptotic Notations can describe an algorithm's run time when the input tends toward a specific or limiting value. Asymptotic analysis helps to analyze the algorithm performance change in the order of input size.
+
+Big O Notation in Data Structure is used to express algorithmic complexity using algebraic terms. It describes the upper bound of an algorithm's runtime and calculates the time and amount of memory needed to execute the algorithm for an input value.
+
+Good resources:
+
+- [Big O Notation by Gayle Laakmann McDowell](https://www.youtube.com/watch?v=v4cd1O4zkGw)
+- [The Complete Guide to Big O Notation & Complexity Analysis for Algorithms: Part 1 of 2 by Alvin Zablan](https://www.youtube.com/watch?v=HfIH3czXc-8)
+- [The Complete Guide to Big O Notation & Complexity Analysis for Algorithms: Part 2 of 2 by Alvin Zablan](https://www.youtube.com/watch?v=zo7YFqw5hNw)
+
 --
 
-## JavaScript
+## Problems
+
+### [Valid Anagram](/problems/valid-anagram/problem.md)
+
+| Solution | Avg Time | Time Complexity
+| --- | ----------- | --- |
+| [JavaScript #1](/javascript/valid-anagram/solution-1.js) | 424.484ms | `A1^3` |
+[JavaScript #2](/javascript/valid-anagram/solution-2.js) | 7.486ms | `2(A1 + A2)` |
+[JavaScript #3](/javascript/valid-anagram/solution-3.js) | 9.745ms | `log A1` |
+
+## Running
 
 Total problems: 100
 
 **Running JavaScript exercises**
 
 ```bash
-make run lang=js n=001
+make run lang=js name=valid-anagram
 ```
 
 **Running specific test for JavaScript (wip)**
 
 ```bash
-make test lang=js n=001
+make test lang=js name=valid-anagram
 ```
 
 **Running all tests for JavaScript (wip)**
 
 ```bash
 make test lang=js
-```
-
---
-
-### JavaScript 001-020
-
-[001](/javascript/001/problem.js) • [002](/javascript/002/problem.js) • [003](/javascript/003/problem.js) • [003](/javascript/003/problem.js) • [004](/javascript/004/problem.js) • [005](/javascript/005/problem.js) • [006](/javascript/006/problem.js) • [007](/javascript/007/problem.js) • [008](/javascript/008/problem.js) • [009](/javascript/009/problem.js) • [010](/javascript/010/problem.js) • [010](/javascript/010/problem.js) • [011](/javascript/011/problem.js) • [012](/javascript/012/problem.js) • [013](/javascript/013/problem.js) • [013](/javascript/013/problem.js) • [014](/javascript/014/problem.js) • [015](/javascript/015/problem.js) • [016](/javascript/016/problem.js) • [017](/javascript/017/problem.js) • [018](/javascript/018/problem.js) • [019](/javascript/019/problem.js) • [020](/javascript/020/problem.js)
-
-### JavaScript 020-040
-
-[001](/javascript/001/problem.js) • [002](/javascript/002/problem.js) • [003](/javascript/003/problem.js) • [003](/javascript/003/problem.js) • [004](/javascript/004/problem.js) • [005](/javascript/005/problem.js) • [006](/javascript/006/problem.js) • [007](/javascript/007/problem.js) • [008](/javascript/008/problem.js) • [009](/javascript/009/problem.js) • [010](/javascript/010/problem.js) • [010](/javascript/010/problem.js) • [011](/javascript/011/problem.js) • [012](/javascript/012/problem.js) • [013](/javascript/013/problem.js) • [013](/javascript/013/problem.js) • [014](/javascript/014/problem.js) • [015](/javascript/015/problem.js) • [016](/javascript/016/problem.js) • [017](/javascript/017/problem.js) • [018](/javascript/018/problem.js) • [019](/javascript/019/problem.js) • [020](/javascript/020/problem.js)
-
-### JavaScript 040-060
-
-[001](/javascript/001/problem.js) • [002](/javascript/002/problem.js) • [003](/javascript/003/problem.js) • [003](/javascript/003/problem.js) • [004](/javascript/004/problem.js) • [005](/javascript/005/problem.js) • [006](/javascript/006/problem.js) • [007](/javascript/007/problem.js) • [008](/javascript/008/problem.js) • [009](/javascript/009/problem.js) • [010](/javascript/010/problem.js) • [010](/javascript/010/problem.js) • [011](/javascript/011/problem.js) • [012](/javascript/012/problem.js) • [013](/javascript/013/problem.js) • [013](/javascript/013/problem.js) • [014](/javascript/014/problem.js) • [015](/javascript/015/problem.js) • [016](/javascript/016/problem.js) • [017](/javascript/017/problem.js) • [018](/javascript/018/problem.js) • [019](/javascript/019/problem.js) • [020](/javascript/020/problem.js)
-
-### JavaScript 060-080
-
-[001](/javascript/001/problem.js) • [002](/javascript/002/problem.js) • [003](/javascript/003/problem.js) • [003](/javascript/003/problem.js) • [004](/javascript/004/problem.js) • [005](/javascript/005/problem.js) • [006](/javascript/006/problem.js) • [007](/javascript/007/problem.js) • [008](/javascript/008/problem.js) • [009](/javascript/009/problem.js) • [010](/javascript/010/problem.js) • [010](/javascript/010/problem.js) • [011](/javascript/011/problem.js) • [012](/javascript/012/problem.js) • [013](/javascript/013/problem.js) • [013](/javascript/013/problem.js) • [014](/javascript/014/problem.js) • [015](/javascript/015/problem.js) • [016](/javascript/016/problem.js) • [017](/javascript/017/problem.js) • [018](/javascript/018/problem.js) • [019](/javascript/019/problem.js) • [020](/javascript/020/problem.js)
-
-### JavaScript 080-100
-
-[001](/javascript/001/problem.js) • [002](/javascript/002/problem.js) • [003](/javascript/003/problem.js) • [003](/javascript/003/problem.js) • [004](/javascript/004/problem.js) • [005](/javascript/005/problem.js) • [006](/javascript/006/problem.js) • [007](/javascript/007/problem.js) • [008](/javascript/008/problem.js) • [009](/javascript/009/problem.js) • [010](/javascript/010/problem.js) • [010](/javascript/010/problem.js) • [011](/javascript/011/problem.js) • [012](/javascript/012/problem.js) • [013](/javascript/013/problem.js) • [013](/javascript/013/problem.js) • [014](/javascript/014/problem.js) • [015](/javascript/015/problem.js) • [016](/javascript/016/problem.js) • [017](/javascript/017/problem.js) • [018](/javascript/018/problem.js) • [019](/javascript/019/problem.js) • [020](/javascript/020/problem.js)
-
---
-
---
-
-## Rust
-
-### Running Rust exercises
-
-```bash
-make run lang=rust n=001
 ```
