@@ -2,8 +2,6 @@
 
 🌊
 
-Problems per languages: [JavaScript](#javascript) • [Rust](#rust) • [Golang](#golang) • [C++](#cpp)
-
 --
 
 ## Big O
@@ -32,24 +30,22 @@ Good resources:
 [JavaScript #2](/javascript/valid-anagram/solution-2.js) | 7.486ms | `2(A1 + A2)` |
 [JavaScript #3](/javascript/valid-anagram/solution-3.js) | 9.745ms | `log A1` |
 
-## Running
+### [Two Sum](/problems/two-sum/problem.md)
 
-Total problems: 100
+| Solution | Avg Time | Time Complexity
+| --- | ----------- | --- |
+[JavaScript #1](/javascript/two-sum/solution-1.js) | 9.745ms | `log A1` |
+
+### [Contains Duplicate](/problems/contains-duplicate/problem.md)
+
+| Solution | Avg Time | Time Complexity
+| --- | ----------- | --- |
+[JavaScript #1](/javascript/contains-duplicate/solution-1.js) | 9.745ms | `log A1` |
+
+## Running
 
 **Running JavaScript exercises**
 
 ```bash
 make run lang=js name=valid-anagram
-```
-
-**Running specific test for JavaScript (wip)**
-
-```bash
-make test lang=js name=valid-anagram
-```
-
-**Running all tests for JavaScript (wip)**
-
-```bash
-make test lang=js
 ```

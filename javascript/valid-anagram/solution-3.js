@@ -51,7 +51,7 @@ var isAnagram = function(s, t) {
 };
 
 var long_string = new Array(40000).toString();
-const {test} = require('../helpers/test');
+const test = require('../helpers/test');
 const {start, end} = require('../helpers/timer');
 start();
 test(isAnagram("rat", "cat"), false);
