@@ -25,11 +25,11 @@ function two_sum(num, target) {
 	return two_sum;
 }
 
-
 const test = require('../helpers/test');
 const {start, end} = require('../helpers/timer');
 start();
 test(two_sum([1], 0), []);
+test(two_sum([1,2], 2), []);
 test(two_sum([], -1), []);
 test(two_sum([2,7,11,15], 9), [0,1]);
 test(two_sum([2,11,7,15], 9), [0,2]);

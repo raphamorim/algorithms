@@ -20,6 +20,14 @@ Good resources:
 
 --
 
+## Sorts
+
+Good resources:
+
+- [QuickSort Algorithm by Abdul Bari](https://www.youtube.com/watch?v=7h1s2SojIRw)
+
+--
+
 ## Problems
 
 ### [Valid Anagram](/problems/valid-anagram/problem.md)
