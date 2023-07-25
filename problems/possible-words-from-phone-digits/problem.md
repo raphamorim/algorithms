@@ -1,5 +1,26 @@
 # Possible words from phone digits
 
+```
+ _____   _____   _____
+[     ] [     ] [     ]
+[  1  ] [ ABC ] [ DEF ]
+[_____] [__2__] [__3__]
+ _____   _____   _____
+[     ] [     ] [     ]
+[ GHI ] [ JKL ] [ MNO ]
+[__4__] [__5__] [__6__]
+ _____   _____   _____
+[     ] [     ] [     ]
+[ PQRS] [ TUV ] [ WXYZ]
+[__7__] [__8__] [__9__]
+ _____   _____   _____
+[     ] [     ] [     ]
+[  *  ] [  0  ] [  #  ]
+[_____] [_____] [_____]
+ 
+```
+
+
 Given a keypad as shown in the diagram, and an `N` digit number which is represented by array `a[ ]`, the task is to list all words which are possible by pressing these numbers.
 
 ## Example 1
