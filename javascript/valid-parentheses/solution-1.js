@@ -1,5 +1,5 @@
 function valid_parentheses(str) {
-	let arr = str.split();
+	let arr = str.split("");
 
 	let expected = [];
 	for (let i = 0; i < arr.length; i++) {
@@ -14,18 +14,19 @@ function valid_parentheses(str) {
 			continue;
 		}
 
-		let expected_item = expected.pop();
-		if (arr[i] === ")" && expected_item != ")") {
+		if (arr[i] === ")" && expected[expected.length - 1] != ")") {
 			break;
 		}
 
-		if (arr[i] === "]" && expected_item != "]") {
+		if (arr[i] === "]" && expected[expected.length - 1] != "]") {
 			break;
 		}
 
-		if (arr[i] === "}" && expected_item != "}") {
+		if (arr[i] === "}" && expected[expected.length - 1] != "}") {
 			break;
 		}
+
+		expected.pop();
 	}
 
 	return !(expected.length > 0);
@@ -34,5 +35,5 @@ function valid_parentheses(str) {
 const test = require('../helpers/test');
 test(valid_parentheses("()"), true);
 test(valid_parentheses("()[]{}"), true);
-test(valid_parentheses("(]"), true);
+test(valid_parentheses("(]"), false);
 

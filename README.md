@@ -1,9 +1,5 @@
 # Algorithms
 
-🌊
-
---
-
 ## Big O
 
 We can analyze how efficient an algorithm is from the amount of time, storage, other resources it takes to run the algorithm, and a change in the input size. Big O Notation in Data Structure tells us how well an algorithm will perform in a particular situation. In other words, it gives an algorithm's upper-bound runtime or worst-case complexity.
@@ -51,6 +47,12 @@ Good resources:
 [JavaScript #1](/javascript/contains-duplicate/solution-1.js) | 9.745ms | `log A1` |
 
 ## Running
+
+**Running Rust exercises**
+
+```bash
+make run lang=rust name=valid-anagram
+```
 
 **Running JavaScript exercises**
 

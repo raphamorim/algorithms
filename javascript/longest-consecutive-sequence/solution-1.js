@@ -1,22 +1,22 @@
 // Time complexity: O(n)
 // Space complexity: O(n)
 function longest_consecutive_sequence(arr) {
-	arr.sort((a, b) => {
-		return (a - b);
-	});
+    arr.sort((a, b) => {
+        return (a - b);
+    });
 
-	let counter = 0;
-	for (let i = 0; i < arr.length; i++) {
-		if (arr[i] == (arr[i + 1] - 1)) {
-			if (counter == 0) {
-				counter = 2;
-			} else {
-				counter += 1;
-			}
-		}
-	}
+    let counter = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == (arr[i + 1] - 1)) {
+            if (counter == 0) {
+                counter = 2;
+            } else {
+                counter += 1;
+            }
+        }
+    }
 
-	return counter;
+    return counter;
 }
 
 
