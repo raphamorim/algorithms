@@ -13,7 +13,7 @@ Example:
 
 You are given the following parameters:
 
-- Rates: `['USD', 'JPY', 110] ['US', 'AUD', 1.45] ['JPY', 'GBP', 0.0070]`
+- Rates: `['USD', 'JPY', 110] ['USD', 'AUD', 1.45] ['JPY', 'GBP', 0.0070]`
 - To/From currency `['GBP', 'AUD']`
 
 Find the rate for the 'To/From' curency. In this case, the correct result is `1.89`.
